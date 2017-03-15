@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Form</title>
+    <style>
+        .buttons{
+            margin: 10px 10px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="cgi-bin/insert.py" method="get">
+        <h4>Enter ID: <input type="text" name="ID"> </h4>
+
+        <h4>Enter Name:  <input type="text" name="Name" /></h4>
+    <div class="buttons">
+        <input type="submit" value="Insert" /><br/>
+        <input type="submit" value="Delete" formaction="cgi-bin/delete.py"/><br/>
+        <input type="submit" value="Update" formaction="cgi-bin/update.py"/>
+    </div>
+    </form>
+
+</body>
+</html>
